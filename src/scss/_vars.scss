@@ -1,11 +1,20 @@
 :root {
 	// base
 	--font-family: "Golos Text", sans-serif;
-	--content-width: 1572px;
+	--content-width: 1371px;
 	--container-offset: 15px;
 	--container-width: calc(var(--content-width) + (var(--container-offset) * 2));
 
 	// colors
 	--white-color: #fff;
 	--black-color: #1e1e1e;
+	--dark-blue-color: #005893;
+	--light-blue-color: #0bbbef;
+
+	// удалить потом
+	--grey-color: #c8c8c8;
+}
+
+body {
+	background: var(--grey-color);
 }
