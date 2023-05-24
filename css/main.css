@@ -202,10 +202,10 @@ html {
   -webkit-transform: translateX(-230%);
   -ms-transform: translateX(-230%);
   transform: translateX(-230%);
-  -webkit-transition: -webkit-transform .55s cubic-bezier(.62,2.03,.72,.94);
-  transition: transform .55s cubic-bezier(.62,2.03,.72,.94);
-  -o-transition: transform .55s cubic-bezier(.62,2.03,.72,.94);
-  transition: transform .55s cubic-bezier(.62,2.03,.72,.94),-webkit-transform .55s cubic-bezier(.62,2.03,.72,.94)
+  -webkit-transition: -webkit-transform .65s cubic-bezier(.62,2.03,.72,.94);
+  transition: transform .65s cubic-bezier(.62,2.03,.72,.94);
+  -o-transition: transform .65s cubic-bezier(.62,2.03,.72,.94);
+  transition: transform .65s cubic-bezier(.62,2.03,.72,.94),-webkit-transform .65s cubic-bezier(.62,2.03,.72,.94)
 }
 .hero__item {
   position: relative;

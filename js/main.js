@@ -1,52 +1,6 @@
 /******/ (() => { // webpackBootstrap
-/******/ 	var __webpack_modules__ = ({
-
-/***/ 999:
-/***/ (() => {
-
-function findLongestWord(str) {
-  var strSplit = str.split(" ");
-  var longestWord = strSplit.sort(function (a, b) {
-    return b.length - a.length;
-  });
-  return longestWord[0].length; // var longestWord = ["jumped", "quick", "brown", "over", "lazy", "The", "fox", "the", "dog"];
-}
-
-console.log(findLongestWord("The quick brown fox jumped over the lazy dog"));
-
-/***/ })
-
-/******/ 	});
-/************************************************************************/
-/******/ 	// The module cache
-/******/ 	var __webpack_module_cache__ = {};
-/******/ 	
-/******/ 	// The require function
-/******/ 	function __webpack_require__(moduleId) {
-/******/ 		// Check if module is in cache
-/******/ 		var cachedModule = __webpack_module_cache__[moduleId];
-/******/ 		if (cachedModule !== undefined) {
-/******/ 			return cachedModule.exports;
-/******/ 		}
-/******/ 		// Create a new module (and put it into the cache)
-/******/ 		var module = __webpack_module_cache__[moduleId] = {
-/******/ 			// no module.id needed
-/******/ 			// no module.loaded needed
-/******/ 			exports: {}
-/******/ 		};
-/******/ 	
-/******/ 		// Execute the module function
-/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
-/******/ 	
-/******/ 		// Return the exports of the module
-/******/ 		return module.exports;
-/******/ 	}
-/******/ 	
-/************************************************************************/
+/******/ 	"use strict";
 var __webpack_exports__ = {};
-// This entry need to be wrapped in an IIFE because it need to be in strict mode.
-(() => {
-"use strict";
 
 ;// CONCATENATED MODULE: ./src/js/_vars.js
 /* harmony default export */ const _vars = ({
@@ -141,17 +95,12 @@ const quizTabs = new Tabs("hero__tabs", {
   button: "hero__button-tabs",
   panel: "hero__panel"
 }, 0);
-// EXTERNAL MODULE: ./src/js/components/longestWord.js
-var longestWord = __webpack_require__(999);
 ;// CONCATENATED MODULE: ./src/js/_components.js
-
 
 ;// CONCATENATED MODULE: ./src/js/main.js
 
 
 
-
-})();
 
 /******/ })()
 ;
