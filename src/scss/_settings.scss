@@ -22,7 +22,8 @@ html {
 }
 
 .site-container {
-	overflow: hidden; // если используете на сайте position: sticky - уберите эту настройку
+	// если используете на сайте position: sticky - уберите эту настройку
+	// overflow: hidden;
 }
 
 .btn-reset {
