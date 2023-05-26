@@ -3,6 +3,10 @@
 	padding-top: 40px;
 	background: var(--white-color);
 	&-video {
+		&__video {
+			width: 100%;
+			height: auto;
+		}
 		&__title {
 			color: var(--black-color);
 			margin-bottom: 22px;
@@ -120,6 +124,53 @@
 	&-heading {
 		&__title {
 			color: var(--black-color);
+		}
+	}
+	&-image {
+		&__image {
+			height: auto;
+			width: 100%;
+		}
+	}
+}
+
+@media (max-width: 1024px) {
+	.module {
+		padding: 20px;
+		padding-bottom: 28px;
+		&-icon-text-1 {
+			&__text {
+				font-size: 20px;
+				line-height: 120%;
+			}
+			&__icon {
+				margin-right: 16px;
+			}
+		}
+		&-card-3 {
+			&__list {
+				column-gap: 0;
+				grid-template-columns: repeat(12, 1fr);
+			}
+			&__item {
+				grid-column: 12 span;
+			}
+		}
+		&-card-2 {
+			&__list {
+				column-gap: 0;
+				row-gap: 30px;
+				grid-template-columns: repeat(12, 1fr);
+			}
+			&__item {
+				grid-column: 12 span;
+			}
+		}
+		&-heading {
+			&__title {
+				font-size: 20px;
+				line-height: 120%;
+			}
 		}
 	}
 }

@@ -188,15 +188,65 @@
 	}
 }
 
+@media (max-width: 1024px) {
+	.course {
+		&__content {
+			gap: 24px;
+		}
+		&__menu {
+			padding: 14px;
+			padding-top: 20px;
+		}
+		&__title {
+			&-menu {
+				font-size: 26px;
+				line-height: 120%;
+				margin-bottom: 20px;
+			}
+			&-heading {
+				font-size: 20px;
+				line-height: 120%;
+				padding-bottom: 11px;
+			}
+		}
+		&__container {
+			&-inner {
+				&-menu {
+					padding: 20px;
+				}
+			}
+			&-back {
+				margin-top: 18px;
+			}
+		}
+		&__text {
+			&-menu {
+				font-size: 15px;
+				line-height: 120%;
+			}
+		}
+		&__item {
+			&-contents {
+				&::after {
+					top: 2px;
+				}
+			}
+		}
+		&__list {
+			min-height: unset;
+			&-contents {
+				padding-bottom: 14px;
+			}
+		}
+	}
+}
+
 @media (max-width: 768px) {
 	.course {
 		&__container {
 			&-header {
 				padding: 0 16px;
 			}
-		}
-		&__content {
-			gap: 26px;
 		}
 	}
 }
