@@ -105,6 +105,8 @@
 			position: relative;
 			cursor: pointer;
 			padding-right: 19px;
+			opacity: 0.7;
+			transition: opacity 0.3s ease;
 			&::after {
 				content: "";
 				position: absolute;
@@ -118,6 +120,7 @@
 				transition: opacity 0.3s ease;
 			}
 			&-active {
+				opacity: 1;
 				& .course {
 					&__text {
 						&-menu {
