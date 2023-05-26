@@ -115,7 +115,7 @@ html {
   line-height: 18px
 }
 .hero {
-  padding: 90px 0
+  padding: 50px 0
 }
 .hero__container-courses {
   margin-bottom: 70px
@@ -350,7 +350,7 @@ html {
   }
 }
 .course {
-  padding: 90px 0
+  padding: 50px 0
 }
 .course__container-inner-menu {
   border-radius: 25px;
@@ -550,17 +550,55 @@ html {
 .course__modules .module:not(:first-child) {
   padding-top: 0
 }
+@media (max-width:1024px) {
+  .course__content {
+    gap: 24px
+  }
+  .course__menu {
+    padding: 20px 14px 14px
+  }
+  .course__title-menu {
+    font-size: 26px;
+    line-height: 120%;
+    margin-bottom: 20px
+  }
+  .course__title-heading {
+    font-size: 20px;
+    line-height: 120%;
+    padding-bottom: 11px
+  }
+  .course__container-inner-menu {
+    padding: 20px
+  }
+  .course__container-back {
+    margin-top: 18px
+  }
+  .course__text-menu {
+    font-size: 15px;
+    line-height: 120%
+  }
+  .course__item-contents::after {
+    top: 2px
+  }
+  .course__list {
+    min-height: unset
+  }
+  .course__list-contents {
+    padding-bottom: 14px
+  }
+}
 @media (max-width:768px) {
   .course__container-header {
     padding: 0 16px
-  }
-  .course__content {
-    gap: 26px
   }
 }
 .module {
   padding: 40px 50px 50px;
   background: var(--white-color)
+}
+.module-video__video {
+  width: 100%;
+  height: auto
 }
 .module-video__title {
   color: var(--black-color);
@@ -692,4 +730,47 @@ html {
 }
 .module-heading__title {
   color: var(--black-color)
+}
+.module-image__image {
+  height: auto;
+  width: 100%
+}
+@media (max-width:1024px) {
+  .module {
+    padding: 20px 20px 28px
+  }
+  .module-icon-text-1__text {
+    font-size: 20px;
+    line-height: 120%
+  }
+  .module-icon-text-1__icon {
+    margin-right: 16px
+  }
+  .module-card-3__list {
+    -webkit-column-gap: 0;
+    -moz-column-gap: 0;
+    column-gap: 0;
+    -ms-grid-columns: (1fr)[12];
+    grid-template-columns: repeat(12,1fr)
+  }
+  .module-card-3__item {
+    -ms-grid-column-span: 12;
+    grid-column: 12 span
+  }
+  .module-card-2__list {
+    -webkit-column-gap: 0;
+    -moz-column-gap: 0;
+    column-gap: 0;
+    row-gap: 30px;
+    -ms-grid-columns: (1fr)[12];
+    grid-template-columns: repeat(12,1fr)
+  }
+  .module-card-2__item {
+    -ms-grid-column-span: 12;
+    grid-column: 12 span
+  }
+  .module-heading__title {
+    font-size: 20px;
+    line-height: 120%
+  }
 }
