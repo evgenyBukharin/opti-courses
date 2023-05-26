@@ -463,7 +463,11 @@ html {
 .course__item-contents {
   position: relative;
   cursor: pointer;
-  padding-right: 19px
+  padding-right: 19px;
+  opacity: .7;
+  -webkit-transition: opacity .3s;
+  -o-transition: opacity .3s;
+  transition: opacity .3s
 }
 .course__item-contents::after {
   content: "";
@@ -478,6 +482,9 @@ html {
   -webkit-transition: opacity .3s;
   -o-transition: opacity .3s;
   transition: opacity .3s
+}
+.course__item-contents-active {
+  opacity: 1
 }
 .course__item-contents-active .course__text-menu {
   -webkit-transform: translateX(5px);
