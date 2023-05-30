@@ -172,6 +172,11 @@
 			font-weight: 400;
 			line-height: 26px;
 		}
+		&-image {
+			display: flex;
+			justify-content: space-between;
+			gap: 28px;
+		}
 	}
 	&-calendar {
 		&__list {
