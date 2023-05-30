@@ -1,6 +1,22 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
+/***/ 242:
+/***/ (() => {
+
+const persentage = document.querySelector(".module-grades__persentage");
+const values = document.querySelectorAll(".module-grades__value");
+console.log(values);
+if (persentage !== null && values !== null) {
+  const minHeight = persentage.scrollHeight / values.length;
+  for (let i = 0; i < values.length; i++) {
+    j = i + 1;
+    values[i].style.height = minHeight * j + "px";
+  }
+}
+
+/***/ }),
+
 /***/ 54:
 /***/ (() => {
 
@@ -145,7 +161,10 @@ const quizTabs = new Tabs("hero__tabs", {
 }, 0);
 // EXTERNAL MODULE: ./src/js/components/menu-test.js
 var menu_test = __webpack_require__(54);
+// EXTERNAL MODULE: ./src/js/components/graph.js
+var graph = __webpack_require__(242);
 ;// CONCATENATED MODULE: ./src/js/_components.js
+
 
 
 ;// CONCATENATED MODULE: ./src/js/main.js
