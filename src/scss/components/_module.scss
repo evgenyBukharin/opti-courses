@@ -1,5 +1,6 @@
 .module {
 	padding: 50px;
+	padding-bottom: 36px;
 	padding-top: 40px;
 	background: var(--white-color);
 	&-video {
@@ -130,6 +131,48 @@
 		&__image {
 			height: auto;
 			width: 100%;
+		}
+	}
+	&-line {
+		padding-left: 0;
+		padding-right: 0;
+		&__line {
+			display: block;
+			width: 100%;
+			height: 2px;
+			background: var(--light-blue-color);
+		}
+	}
+	&-list {
+		padding-left: 74px;
+		&__list {
+			display: flex;
+			flex-direction: column;
+			row-gap: 2px;
+		}
+		&__item {
+			font-weight: 400;
+			font-size: 20px;
+			line-height: 29px;
+			padding-left: 4px;
+		}
+		&-numered {
+			.module-list__list {
+				list-style-type: decimal;
+			}
+		}
+		&-unnumered {
+			.module-list__list {
+				list-style-type: disc;
+			}
+		}
+	}
+	&-text {
+		&__text {
+			margin: 0;
+			font-size: 20px;
+			font-weight: 400;
+			line-height: 26px;
 		}
 	}
 }

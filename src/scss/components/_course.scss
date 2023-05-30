@@ -105,7 +105,7 @@
 			position: relative;
 			cursor: pointer;
 			padding-right: 19px;
-			opacity: 0.7;
+			opacity: 0.6;
 			transition: opacity 0.3s ease;
 			&::after {
 				content: "";
@@ -118,6 +118,9 @@
 				border-radius: 100%;
 				opacity: 0;
 				transition: opacity 0.3s ease;
+			}
+			&:hover {
+				opacity: 0.8;
 			}
 			&-active {
 				opacity: 1;
@@ -186,6 +189,9 @@
 		& .module {
 			&:not(:first-child) {
 				padding-top: 0;
+			}
+			&:last-child {
+				padding-bottom: 40px;
 			}
 		}
 	}
