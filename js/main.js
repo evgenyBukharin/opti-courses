@@ -14,6 +14,7 @@ if (persentage !== null && values !== null) {
     values[i].style.height = minHeight * j + "px";
   }
 }
+alert(window.innerWidth);
 
 /***/ }),
 
