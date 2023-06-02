@@ -148,16 +148,17 @@ html {
   -webkit-transition: opacity .3s;
   -o-transition: opacity .3s;
   transition: opacity .3s;
-  max-width: 155px
+  max-width: 112px
 }
 .hero__title-hidden {
   max-width: 103px
 }
 .hero__list {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[15];
-  grid-template-columns: repeat(15,1fr);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   gap: 40px
 }
 .hero__list-tabs {
@@ -167,24 +168,28 @@ html {
   gap: 14px;
   margin-bottom: 22px
 }
-.hero__list-wider {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap
-}
 .hero__list-wider .hero__item {
-  max-width: 280px
+  max-width: 280px;
+  max-height: 180px;
+  height: 100%;
+  -webkit-transition: -webkit-transform .65s cubic-bezier(.62,2.03,.72,.94);
+  transition: transform .65s cubic-bezier(.62,2.03,.72,.94);
+  -o-transition: transform .65s cubic-bezier(.62,2.03,.72,.94);
+  transition: transform .65s cubic-bezier(.62,2.03,.72,.94),-webkit-transform .65s cubic-bezier(.62,2.03,.72,.94)
 }
 .hero__list-wider .hero__item:first-child {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
   padding: 0
 }
 .hero__list-wider .hero__item:first-child .hero__icons {
-  background: 0 0
+  background: 0 0;
+  max-height: 180px;
+  height: 100%
 }
 .hero__list-wider .hero__item:first-child .hero__link {
   display: none
@@ -203,16 +208,17 @@ html {
 .hero__list-wider .hero__item:hover .hero__icons {
   -webkit-transform: translateX(-230%);
   -ms-transform: translateX(-230%);
-  transform: translateX(-230%);
-  -webkit-transition: -webkit-transform .65s cubic-bezier(.62,2.03,.72,.94);
-  transition: transform .65s cubic-bezier(.62,2.03,.72,.94);
-  -o-transition: transform .65s cubic-bezier(.62,2.03,.72,.94);
-  transition: transform .65s cubic-bezier(.62,2.03,.72,.94),-webkit-transform .65s cubic-bezier(.62,2.03,.72,.94)
+  transform: translateX(-230%)
+}
+.hero__list-wider .hero__title-h5 {
+  max-width: 163px
 }
 .hero__item {
+  max-width: 228px;
+  max-height: 180px;
+  height: 100%;
+  width: 100%;
   position: relative;
-  -ms-grid-column-span: 3;
-  grid-column: 3 span;
   background: var(--dark-blue-color);
   border-radius: 15px;
   padding: 10px 10px 10px 20px;
