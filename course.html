@@ -332,40 +332,86 @@
 							<h4 class="module-grades__title">Виды грейдов</h4>
 							<ul class="list-reset module-grades__container-graph">
 								<li class="module-grades__column">
-									<div class="module-grades__persentage">
-										<div class="module-grades__value"></div>
-									</div>
 									<h6 class="title title__h6 module-grades__title-graph">Intern</h6>
-								</li>
-								<li class="module-grades__column">
-									<div class="module-grades__persentage">
+									<div class="module-grades__persentage" data-coef="0,6">
 										<div class="module-grades__value"></div>
 									</div>
+								</li>
+								<li class="module-grades__column">
 									<h6 class="title title__h6 module-grades__title-graph">Beginer</h6>
-								</li>
-								<li class="module-grades__column">
-									<div class="module-grades__persentage">
+									<div class="module-grades__persentage" data-coef="0,7">
 										<div class="module-grades__value"></div>
 									</div>
+								</li>
+								<li class="module-grades__column">
 									<h6 class="title title__h6 module-grades__title-graph">Junior</h6>
-								</li>
-								<li class="module-grades__column">
-									<div class="module-grades__persentage">
+									<div class="module-grades__persentage" data-coef="0,8">
 										<div class="module-grades__value"></div>
 									</div>
+								</li>
+								<li class="module-grades__column">
 									<h6 class="title title__h6 module-grades__title-graph">Middle</h6>
-								</li>
-								<li class="module-grades__column">
-									<div class="module-grades__persentage">
+									<div class="module-grades__persentage" data-coef="0,9">
 										<div class="module-grades__value"></div>
 									</div>
+								</li>
+								<li class="module-grades__column">
 									<h6 class="title title__h6 module-grades__title-graph">Middle+</h6>
-								</li>
-								<li class="module-grades__column">
-									<div class="module-grades__persentage">
+									<div class="module-grades__persentage" data-coef="0,9">
 										<div class="module-grades__value"></div>
 									</div>
+								</li>
+								<li class="module-grades__column">
 									<h6 class="title title__h6 module-grades__title-graph">Senior</h6>
+									<div class="module-grades__persentage" data-coef="1,0">
+										<div class="module-grades__value"></div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="module-grades__container-text">
+							<h6 class="module-grades__text module-grades__text-title">Как рассчитывается зарплата?</h6>
+							<ul class="module-grades__list">
+								<li class="module-grades__item module-grades__text">
+									оклад * 0,6 = заработная плата уровня
+									<span class="module-grades__text-blue">Intern</span>
+								</li>
+								<li class="module-grades__item module-grades__text">
+									оклад * 0,7 = заработная плата уровня
+									<span class="module-grades__text-blue">Beginner</span>
+								</li>
+								<li class="module-grades__item module-grades__text">
+									оклад * 0,8 = заработная плата уровня
+									<span class="module-grades__text-blue">Junior</span>
+								</li>
+								<li class="module-grades__item module-grades__text">
+									оклад * 0,9 = заработная плата уровня
+									<span class="module-grades__text-blue">Middle</span>
+								</li>
+								<li class="module-grades__item module-grades__text">
+									оклад * 0,9 = заработная плата уровня
+									<span class="module-grades__text-blue">Middle+</span>
+								</li>
+								<li class="module-grades__item module-grades__text">
+									оклад * 1,0 = заработная плата уровня
+									<span class="module-grades__text-blue">Senior</span>
+								</li>
+							</ul>
+							<ul class="list-reset module-grades__icons">
+								<li class="module-grades__item-icon">
+									<svg class="module-grades__icon">
+										<use xlink:href="img/sprite.svg#wallet"></use>
+									</svg>
+								</li>
+								<li class="module-grades__item-icon">
+									<svg class="module-grades__icon">
+										<use xlink:href="img/sprite.svg#graph"></use>
+									</svg>
+								</li>
+								<li class="module-grades__item-icon">
+									<svg class="module-grades__icon">
+										<use xlink:href="img/sprite.svg#round-line-line-round"></use>
+									</svg>
 								</li>
 							</ul>
 						</div>
@@ -594,6 +640,93 @@
 								/>
 							</li>
 						</ul>
+					</div>
+					<div class="module module-books module-books-slider">
+						<h3 class="title title__h3 module-books__title">Список книг для чтения</h3>
+						<div class="swiper module-books-slider__slider">
+							<div class="swiper-wrapper module-books-slider__wrapper">
+								<div class="swiper-slide module-books-slider__slide">
+									<img
+										loading="lazy"
+										src="./img/book-1.png"
+										class="image module-books__image"
+										width="137"
+										height="195"
+										alt="Изображение книги"
+									/>
+								</div>
+								<div class="swiper-slide module-books-slider__slide">
+									<img
+										loading="lazy"
+										src="./img/book-2.png"
+										class="image module-books__image"
+										width="137"
+										height="195"
+										alt="Изображение книги"
+									/>
+								</div>
+								<div class="swiper-slide module-books-slider__slide">
+									<img
+										loading="lazy"
+										src="./img/book-3.png"
+										class="image module-books__image"
+										width="137"
+										height="195"
+										alt="Изображение книги"
+									/>
+								</div>
+								<div class="swiper-slide module-books-slider__slide">
+									<img
+										loading="lazy"
+										src="./img/book-4.png"
+										class="image module-books__image"
+										width="137"
+										height="195"
+										alt="Изображение книги"
+									/>
+								</div>
+								<div class="swiper-slide module-books-slider__slide">
+									<img
+										loading="lazy"
+										src="./img/book-1.png"
+										class="image module-books__image"
+										width="137"
+										height="195"
+										alt="Изображение книги"
+									/>
+								</div>
+								<div class="swiper-slide module-books-slider__slide">
+									<img
+										loading="lazy"
+										src="./img/book-3.png"
+										class="image module-books__image"
+										width="137"
+										height="195"
+										alt="Изображение книги"
+									/>
+								</div>
+								<div class="swiper-slide module-books-slider__slide">
+									<img
+										loading="lazy"
+										src="./img/book-4.png"
+										class="image module-books__image"
+										width="137"
+										height="195"
+										alt="Изображение книги"
+									/>
+								</div>
+								<div class="swiper-slide module-books-slider__slide">
+									<img
+										loading="lazy"
+										src="./img/book-2.png"
+										class="image module-books__image"
+										width="137"
+										height="195"
+										alt="Изображение книги"
+									/>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
