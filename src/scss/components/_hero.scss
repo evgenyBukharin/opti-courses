@@ -215,3 +215,11 @@
 		}
 	}
 }
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+	.hero__item:hover .hero__icons {
+		-webkit-transform: translateX(-180%);
+		-ms-transform: translateX(-180%);
+		transform: translateX(-180%);
+	}
+}
