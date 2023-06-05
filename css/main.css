@@ -1335,21 +1335,21 @@ html {
 @media (-webkit-min-device-pixel-ratio:1.25),
 (-o-min-device-pixel-ratio:5/4),
 (min-resolution:120dpi) {
-  .body {
+  body {
     background-color: #dc143c
   }
 }
 @media (-webkit-min-device-pixel-ratio:1.3),
 (-o-min-device-pixel-ratio:13/10),
 (min-resolution:124.8dpi) {
-  .body {
+  body {
     background-color: #0ff
   }
 }
 @media (-webkit-min-device-pixel-ratio:1.5),
 (-o-min-device-pixel-ratio:3/2),
 (min-resolution:144dpi) {
-  .body {
+  body {
     background-color: #ff0
   }
 }
