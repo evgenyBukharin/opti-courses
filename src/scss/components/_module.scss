@@ -647,21 +647,21 @@
 
 /* 1.25 dpr */
 @media (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
-	.body {
+	body {
 		background-color: crimson;
 	}
 }
 
 /* 1.3 dpr */
 @media (-webkit-min-device-pixel-ratio: 1.3), (min-resolution: 124.8dpi) {
-	.body {
+	body {
 		background-color: aqua;
 	}
 }
 
 /* 1.5 dpr */
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
-	.body {
+	body {
 		background-color: yellow;
 	}
 }
