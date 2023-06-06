@@ -4,13 +4,51 @@
 /***/ 242:
 /***/ (() => {
 
-const persentage = document.querySelector(".module-grades__persentage");
+const persentages = document.querySelectorAll(".module-grades__persentage");
 const values = document.querySelectorAll(".module-grades__value");
-if (persentage !== null && values !== null) {
-  const minHeight = persentage.scrollHeight / values.length;
-  for (let i = 0; i < values.length; i++) {
-    j = i + 1;
-    values[i].style.height = minHeight * j + "px";
+if (persentages !== null && values !== null) {
+  const height = persentages[0].scrollHeight;
+  persentages.forEach((elem, idx) => {
+    let dataCoef = elem.getAttribute("data-coef").replace(/,/, ".");
+    if (dataCoef == 1) {
+      values[idx].style.height = height + "px";
+    } else {
+      values[idx].style.height = height * dataCoef - 10 + "px";
+    }
+  });
+}
+
+/***/ }),
+
+/***/ 61:
+/***/ (() => {
+
+const borderContainerList = document.querySelector(".module-system__grades");
+const borderContainerItems = document.querySelectorAll(".module-system__grade");
+const borderContainerAfter = document.querySelector(".module-system__grades-after");
+const borderContainerBefore = document.querySelector(".module-system__grades-before");
+const gradesList = {
+  INTERN: 1,
+  BEGINNER: 2,
+  JUNIOR: 3,
+  MIDDLE: 4,
+  "MIDDLE+": 5,
+  SENIOR: 6
+};
+if (borderContainerList !== null && borderContainerAfter !== null && borderContainerBefore !== null) {
+  const gradeItems = borderContainerList.querySelectorAll(".module-system__grade");
+  const gap = 20;
+  const gradeItemWidth = gradeItems[0].offsetWidth;
+  wholeItemsWidth = gradeItems.length * gradeItemWidth;
+  wholeGapWidth = gradeItems.length * gap - gap;
+  calculatedWidth = wholeItemsWidth + wholeGapWidth;
+  borderContainerAfter.style.width = calculatedWidth + "px";
+  borderContainerAfter.style.height = borderContainerList.offsetHeight - 1 + "px";
+  let currentGrade = borderContainerList.getAttribute("data-grade");
+  borderContainerBefore.style.width = gradeItemWidth * gradesList[currentGrade] + gradesList[currentGrade] * gap - gap / 2 + "px";
+  borderContainerBefore.style.height = borderContainerList.offsetHeight - 1 + "px";
+  for (let i = 0; i < gradesList[currentGrade]; i++) {
+    borderContainerItems[i].classList.add("module-system__grade-filled");
   }
 }
 
@@ -10651,11 +10689,29 @@ function EffectCards({
 ;// CONCATENATED MODULE: ./src/js/components/books-slider.js
 
 core.use([Autoplay]);
-const swiper = new core(".swiper", {
-  slidesPerView: 4
-  // spaceBetween: 10,
+const swiperContainer = document.querySelector(".module-books-slider__slider");
+const swiper = new core(swiperContainer, {
+  slidesPerView: 4,
+  spaceBetween: 50,
+  watchSlidesProgress: true,
+  slideVisibleClass: "module-books-slider__slide-visible",
+  autoplay: {
+    delay: 5000,
+    pauseOnMouseEnter: true,
+    disableOnInteraction: false
+  },
+  on: {
+    afterInit: () => {
+      const slides = swiperContainer.querySelectorAll(".swiper-slide");
+      const maxIndexSpan = document.querySelector(".module-books-slider__maxindex");
+      maxIndexSpan.innerHTML = slides.length;
+    }
+  }
 });
+// EXTERNAL MODULE: ./src/js/components/list-overborder.js
+var list_overborder = __webpack_require__(61);
 ;// CONCATENATED MODULE: ./src/js/_components.js
+
 
 
 
