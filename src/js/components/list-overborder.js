@@ -23,7 +23,7 @@ if (borderContainerList !== null && borderContainerAfter !== null && borderConta
 	borderContainerAfter.style.width = calculatedWidth + "px";
 	borderContainerAfter.style.height = borderContainerList.offsetHeight - 1 + "px";
 
-	let currentGrade = borderContainerList.getAttribute("data-grade");
+	let currentGrade = document.getElementById("competence").getAttribute("data-competence");
 	borderContainerBefore.style.width =
 		gradeItemWidth * gradesList[currentGrade] + gradesList[currentGrade] * gap - gap / 2 + "px";
 	borderContainerBefore.style.height = borderContainerList.offsetHeight - 1 + "px";
